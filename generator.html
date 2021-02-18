@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Genieriert ein Calenderfile </h1>
+    <p> Erstellt eine .ics Datei, die man herunterladen kann </p>
+    <div class="generator">
+        <section>
+            <label for="startDate"> Start Datum </label>
+            <input type="date" name="" id="startDate">
+        </section>
+        <section>
+            <label for="endDate"> End Datum </label>
+            <input type="date" name="" id="endDate">
+        </section>
+        <section>
+            <label for="endDate"> Uhrzeit Start </label>
+            <div class="row">
+                <select name="" id="startTimeHour"></select>
+                <select name="" id="startTimeMinute"></select>
+            </div>
+        </section>
+        <section>
+            <label for="endDate"> Uhrzeit Ende </label>
+            <div class="row">
+                <select name="" id="endTimeHour"></select>
+                <select name="" id="endTimeMinute"></select>
+            </div>
+        </section>
+        <section>
+            <label for="location"> Ort </label>
+            <input type="input" name="" id="location" placeholder="">
+        </section>
+        <section>
+            <label for="summary"> Termin Name </label>
+            <input type="text" name="" id="summary" placeholder="">
+        </section>
+        <section>
+            <label for="description"> Beschreibung </label>
+            <textarea id="description" placeholder=""></textarea>
+        </section>
+        <section>
+           <button id="create" > Datei erstellen </button>
+           <a id="downloadLink" class="download hide" download="event.ics"> ⇩ Herunterladen </a>
+        </section>
+    </div>
+
+</body>
+</html>
