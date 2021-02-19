@@ -5,9 +5,15 @@ let startTimeHourElement = document.querySelector("#startTimeHour");
 let startTimeMinuteElement = document.querySelector("#startTimeMinute");
 let endTimeHourElement = document.querySelector("#endTimeHour");
 let endTimeMinuteElement = document.querySelector("#endTimeMinute");
-let dateElements = [startDateElement, endDateElement];
 
-for (const element of dateElements) {
+let elements = [
+    startDateElement,
+    endDateElement, 
+    startTimeHourElement,
+    startTimeMinuteElement,
+    endTimeHourElement,
+    endTimeMinuteElement
+].forEach(element => {
     if(element.type === 'date') {
         element.valueAsDate = date;
     }
@@ -15,7 +21,8 @@ for (const element of dateElements) {
         console.log(this.valueAsDate);
         console.log(this.value);
     });
-}
+});
+
 
 /* create the correct options + values for the time Elements */
 createOptionsInSelect(startTimeHourElement, 24);
